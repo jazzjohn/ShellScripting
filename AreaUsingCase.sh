@@ -9,13 +9,11 @@ case $ch in
 		echo -e "Enter the radius :\c"
 		read r
 		echo "Area of the circle is : `echo "3.14*$r*$r" | bc`"
-		break
 		;;
 	square)
 		echo -e "Enter the side of the square: \c"
 		read l
 		echo "Area of the square is : $((l*l))"
-		break
 		;;
 	rectangle)
 		echo -e "Enter the length:\c"
@@ -23,7 +21,6 @@ case $ch in
 		echo -e "Enter the breadth:\c"
 		read b
 		echo "Area of the rectangle is : $((l*b))"
-		break
 		;;
 	triangle)
 		echo -e "Enter the base length"
@@ -31,10 +28,9 @@ case $ch in
 		echo -e "Enter the height"
 		read h
 		echo "Area of the trianglee is : `echo "0.5*$b*$h" | bc`"
-		break
 		;;
 	*)
-		echo "Please enter valid choice!!!"
+		echo "Enter valid choice:"
 		;;
 esac
 
