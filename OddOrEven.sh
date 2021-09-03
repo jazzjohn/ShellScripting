@@ -4,11 +4,7 @@
 
 echo -e  "Enter a number: \c"
 read num
-if [ $((num%2)) -eq 0 ]
-then
-	echo "Entered number is Even number"
-else
-	echo "Entered number is Odd number"
-fi
+[ $((num%2)) -eq 0 ] && echo "Entered number is Even number" || echo "Entered number is Odd number"
+
 
 

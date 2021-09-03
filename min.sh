@@ -4,12 +4,9 @@
 
 echo "Enter four values: "
 min=999
-read a
-[ $a -lt $min ] && min=$a
-read b
-[ $b -lt $min ] && min=$b
-read c
-[ $c -lt $min ] && min=$c
-read d
-[ $d -lt $min ] && min=$d
+for((i=0;i<4;i++))
+	{
+		read num
+		[ $num -lt $min ] && min=$num
+	}
 echo "Minimun values: $min"
